@@ -1,0 +1,34 @@
+.basicInformationBar {
+  padding: 5px 0 5px 0;
+}
+
+.container {
+  display: flex;
+}
+
+.personalAvatar {
+  border-radius: 9px;
+}
+
+.informationBar {
+  display: flex;
+  flex-direction: column;
+  margin-left: calc(4 * var(--jiumu-component-secondary-margin));
+}
+
+.informationGroup {
+  display: flex;
+  align-items: center;
+}
+
+.nickname {
+  font-size: var(--jiumu-font-size-extra-large);
+  font-weight: var(--jiumu-font-weight-primary);
+  color: var(--jiumu-text-color-primary);
+  transition: color var(--jiumu-transition-duration-fast);
+  white-space: nowrap;
+}
+
+.experienceGroup {
+  padding: 5px 0 5px 0;
+}

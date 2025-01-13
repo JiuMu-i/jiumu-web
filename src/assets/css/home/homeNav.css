@@ -1,0 +1,144 @@
+.homeNavBar {
+	border-bottom: 1px solid var(--jiumu-border-color);
+	padding: var(--jiumu-component-padding-secondary);
+	height: var(--jiumu-menu-height);
+	background-color: var(--jiumu-bg-color-overlay);
+	white-space: nowrap;
+	transition: border-color var(--jiumu-transition-duration), background-color var(--jiumu-transition-duration);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--jiumu-s-screen-max-width);
+}
+
+.homeNavBarTitle {
+  display: flex;
+  align-items: center;
+  height: var(--jiumu-menu-item-height);
+  transition: opacity var(--jiumu-transition-duration-fast);
+}
+
+.homeNavBarTitle:hover {
+  opacity: var(--jiumu-transition-duration-slow);
+}
+
+.logo {
+  position: relative;
+  filter: drop-shadow(0px 0px 3px var(--jiumu-color-primary));
+}
+
+.logo+.logoText {
+  padding-left: 8px;
+}
+
+.logoText {
+  color: var(--jiumu-color-primary);
+  font-family: Happy_School;
+  font-size: var(--jiumu-font-size-extra-large);
+  font-weight: var(--jiumu-font-weight-primary);
+  letter-spacing: var(--jiumu-font-letter-spacing-base);
+  filter: drop-shadow(0px 0px 3px var(--jiumu-color-primary));
+}
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.search {
+  padding-left: 16px;
+}
+
+.homeNavBarSearch {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 216px;
+  background-color: var(--jiumu-fill-color);
+}
+
+.homeNavBarMenu {
+  display: none;
+}
+
+.navMenuItem {
+  padding: 0 12px;
+  line-height: var(--jiumu-menu-item-height);
+}
+
+.homeNavBarMenuGroup {
+  display: flex;
+  align-items: center;
+}
+
+.navMenuText {
+  font-size: var(--jiumu-font-size-base);
+  font-weight: var(--jiumu-font-weight-primary);
+  color: var(--jiumu-text-color-primary);
+  transition: color var(--jiumu-transition-duration-fast);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.navMenuText:hover {
+  color: var(--jiumu-text-color-secondary);
+}
+
+.dropdownButtonText {
+  display: flex;
+  align-items: center;
+  line-height: var(--jiumu-menu-item-height);
+}
+
+.homeNavBarMenuLink {
+  display: flex;
+  align-items: center;
+}
+
+.homeNavBarAppearance {
+  display: none;
+}
+
+.homeNavBarSocial {
+  display: none;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  color: var(--jiumu-text-color-primary);
+  transition: color var(--jiumu-transition-duration);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .homeNavBar {
+    padding: var(--jiumu-component-padding-regular);
+  }
+  .homeNavBarSearch {
+    flex-grow: 1;
+  }
+  .homeNavBarMenu {
+    display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .homeNavBar {
+    padding: var(--jiumu-component-padding-primary);
+  }
+  .homeNavBarAppearance {
+    display: flex;
+    align-items: center;
+  }
+  .homeNavBarSocial {
+    display: flex;
+  }
+}

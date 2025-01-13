@@ -1,0 +1,343 @@
+/* 暗黑主题 */
+:root {
+  color-scheme: dark;
+  --jiumu-color-primary: #409eff;
+  --jiumu-color-primary-light-1: rgb(50.8, 116.6, 184.5);
+  --jiumu-color-primary-light-2: rgb(42, 89, 137.5);
+  --jiumu-color-primary-light-3: rgb(33.2, 61.4, 90.5);
+  --jiumu-color-primary-light-4: rgb(28.8, 47.6, 67);
+  --jiumu-color-primary-light-5: rgb(24.4, 33.8, 43.5);
+  --jiumu-color-primary-dark: rgb(102.2, 177.4, 255);
+  --jiumu-color-success: #67c23a;
+  --jiumu-color-success-light-1: rgb(78.1, 141.8, 46.6);
+  --jiumu-color-success-light-2: rgb(61.5, 107, 39);
+  --jiumu-color-success-light-3: rgb(44.9, 72.2, 31.4);
+  --jiumu-color-success-light-4: rgb(36.6, 54.8, 27.6);
+  --jiumu-color-success-light-5: rgb(28.3, 37.4, 23.8);
+  --jiumu-color-success-dark: rgb(133.4, 206.2, 97.4);
+  --jiumu-color-warning: #e6a23c;
+  --jiumu-color-warning-light-1: rgb(167, 119.4, 48);
+  --jiumu-color-warning-light-2: #7d5b28;
+  --jiumu-color-warning-light-3: rgb(83, 62.6, 32);
+  --jiumu-color-warning-light-4: rgb(62, 48.4, 28);
+  --jiumu-color-warning-light-5: rgb(41, 34.2, 24);
+  --jiumu-color-warning-dark: rgb(235, 180.6, 99);
+  --jiumu-color-danger: #f56c6c;
+  --jiumu-color-danger-light-1: rgb(177.5, 81.6, 81.6);
+  --jiumu-color-danger-light-2: rgb(132.5, 64, 64);
+  --jiumu-color-danger-light-3: rgb(87.5, 46.4, 46.4);
+  --jiumu-color-danger-light-4: rgb(65, 37.6, 37.6);
+  --jiumu-color-danger-light-5: rgb(42.5, 28.8, 28.8);
+  --jiumu-color-danger-dark: rgb(247, 137.4, 137.4);
+  --jiumu-color-error: #f56c6c;
+  --jiumu-color-error-light-1: rgb(177.5, 81.6, 81.6);
+  --jiumu-color-error-light-2: rgb(132.5, 64, 64);
+  --jiumu-color-error-light-3: rgb(87.5, 46.4, 46.4);
+  --jiumu-color-error-light-4: rgb(65, 37.6, 37.6);
+  --jiumu-color-error-light-5: rgb(42.5, 28.8, 28.8);
+  --jiumu-color-error-dark: rgb(247, 137.4, 137.4);
+  --jiumu-color-info: #909399;
+  --jiumu-color-info-light-1: rgb(106.8, 108.9, 113.1);
+  --jiumu-color-info-light-2: rgb(82, 83.5, 86.5);
+  --jiumu-color-info-light-3: rgb(57.2, 58.1, 59.9);
+  --jiumu-color-info-light-4: rgb(44.8, 45.4, 46.6);
+  --jiumu-color-info-light-5: rgb(32.4, 32.7, 33.3);
+  --jiumu-color-info-dark: rgb(166.2, 168.6, 173.4);
+  --jiumu-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, .36), 0px 8px 20px rgba(0, 0, 0, .72);
+  --jiumu-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, .72);
+  --jiumu-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, .72);
+  --jiumu-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, .72), 0px 12px 32px #000000, 0px 8px 16px -8px #000000;
+  --jiumu-bg-color-page: #0a0a0a;
+  --jiumu-bg-color: #141414;
+  --jiumu-bg-color-overlay: #1d1e1f;
+  --jiumu-text-color-primary: #E5EAF3;
+  --jiumu-text-color-regular: #CFD3DC;
+  --jiumu-text-color-secondary: #A3A6AD;
+  --jiumu-text-color-placeholder: #8D9095;
+  --jiumu-text-color-disabled: #6C6E72;
+  --jiumu-scrollbar-thumb-bg-color: #8D9095;
+  --jiumu-scrollbar-thumb-bg-color-overlay: #CFD3DC;
+  --jiumu-border-color-darker: #636466;
+  --jiumu-border-color-dark: #58585B;
+  --jiumu-border-color: #4C4D4F;
+  --jiumu-border-color-light: #414243;
+  --jiumu-border-color-lighter: #363637;
+  --jiumu-border-color-extra-light: #2B2B2C;
+  --jiumu-fill-color-darker: #424243;
+  --jiumu-fill-color-dark: #39393A;
+  --jiumu-fill-color: #303030;
+  --jiumu-fill-color-light: #262727;
+  --jiumu-fill-color-lighter: #1D1D1D;
+  --jiumu-fill-color-extra-light: #191919;
+  --jiumu-fill-color-blank: transparent;
+  --jiumu-mask-color: rgba(0, 0, 0, .8);
+  --jiumu-mask-color-extra-light: rgba(0, 0, 0, .3);
+}
+
+/* 明亮主题 */
+#nConfigProvider.light {
+  color-scheme: light;
+  --jiumu-color-primary: #409eff;
+  --jiumu-color-primary-light-1: rgb(121.3, 187.1, 255);
+  --jiumu-color-primary-light-2: rgb(159.5, 206.5, 255);
+  --jiumu-color-primary-light-3: rgb(197.7, 225.9, 255);
+  --jiumu-color-primary-light-4: rgb(216.8, 235.6, 255);
+  --jiumu-color-primary-light-5: rgb(235.9, 245.3, 255);
+  --jiumu-color-primary-dark: rgb(51.2, 126.4, 204);
+  --jiumu-color-success: #67c23a;
+  --jiumu-color-success-light-1: rgb(148.6, 212.3, 117.1);
+  --jiumu-color-success-light-2: rgb(179, 224.5, 156.5);
+  --jiumu-color-success-light-3: rgb(209.4, 236.7, 195.9);
+  --jiumu-color-success-light-4: rgb(224.6, 242.8, 215.6);
+  --jiumu-color-success-light-5: rgb(239.8, 248.9, 235.3);
+  --jiumu-color-success-dark: rgb(82.4, 155.2, 46.4);
+  --jiumu-color-warning: #e6a23c;
+  --jiumu-color-warning-light-1: rgb(237.5, 189.9, 118.5);
+  --jiumu-color-warning-light-2: rgb(242.5, 208.5, 157.5);
+  --jiumu-color-warning-light-3: rgb(247.5, 227.1, 196.5);
+  --jiumu-color-warning-light-4: rgb(250, 236.4, 216);
+  --jiumu-color-warning-light-5: rgb(252.5, 245.7, 235.5);
+  --jiumu-color-warning-dark: rgb(184, 129.6, 48);
+  --jiumu-color-danger: #f56c6c;
+  --jiumu-color-danger-light-1: rgb(248, 152.1, 152.1);
+  --jiumu-color-danger-light-2: rgb(250, 181.5, 181.5);
+  --jiumu-color-danger-light-3: rgb(252, 210.9, 210.9);
+  --jiumu-color-danger-light-4: rgb(253, 225.6, 225.6);
+  --jiumu-color-danger-light-5: rgb(254, 240.3, 240.3);
+  --jiumu-color-danger-dark: rgb(196, 86.4, 86.4);
+  --jiumu-color-error: #f56c6c;
+  --jiumu-color-error-light-1: rgb(248, 152.1, 152.1);
+  --jiumu-color-error-light-2: rgb(250, 181.5, 181.5);
+  --jiumu-color-error-light-3: rgb(252, 210.9, 210.9);
+  --jiumu-color-error-light-4: rgb(253, 225.6, 225.6);
+  --jiumu-color-error-light-5: rgb(254, 240.3, 240.3);
+  --jiumu-color-error-dark: rgb(196, 86.4, 86.4);
+  --jiumu-color-info: #909399;
+  --jiumu-color-info-light-1: rgb(177.3, 179.4, 183.6);
+  --jiumu-color-info-light-2: rgb(199.5, 201, 204);
+  --jiumu-color-info-light-3: rgb(221.7, 222.6, 224.4);
+  --jiumu-color-info-light-4: rgb(232.8, 233.4, 234.6);
+  --jiumu-color-info-light-5: rgb(243.9, 244.2, 244.8);
+  --jiumu-color-info-dark: rgb(115.2, 117.6, 122.4);
+  --jiumu-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, .04), 0px 8px 20px rgba(0, 0, 0, .08);
+  --jiumu-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, .12);
+  --jiumu-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, .12);
+  --jiumu-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, .08), 0px 12px 32px rgba(0, 0, 0, .12), 0px 8px 16px -8px rgba(0, 0, 0, .16);
+  --jiumu-bg-color-page: #f2f3f5;
+  --jiumu-bg-color: #ffffff;
+  --jiumu-bg-color-overlay: #ffffff;
+  --jiumu-text-color-primary: #303133;
+  --jiumu-text-color-regular: #606266;
+  --jiumu-text-color-secondary: #909399;
+  --jiumu-text-color-placeholder: #a8abb2;
+  --jiumu-text-color-disabled: #c0c4cc;
+  --jiumu-scrollbar-thumb-bg-color: #a8abb2;
+  --jiumu-scrollbar-thumb-bg-color-overlay: #606266;
+  --jiumu-border-color-darker: #cdd0d6;
+  --jiumu-border-color-dark: #d4d7de;
+  --jiumu-border-color: #dcdfe6;
+  --jiumu-border-color-light: #e4e7ed;
+  --jiumu-border-color-lighter: #ebeef5;
+  --jiumu-border-color-extra-light: #f2f6fc;
+  --jiumu-fill-color-darker: #e6e8eb;
+  --jiumu-fill-color-dark: #ebedf0;
+  --jiumu-fill-color: #f0f2f5;
+  --jiumu-fill-color-light: #f5f7fa;
+  --jiumu-fill-color-lighter: #fafafa;
+  --jiumu-fill-color-extra-light: #fafcff;
+  --jiumu-fill-color-blank: #ffffff;
+  --jiumu-mask-color: rgba(255, 255, 255, .9);
+  --jiumu-mask-color-extra-light: rgba(255, 255, 255, .3);
+}
+
+:root {
+  --jiumu-color-white: #ffffff;
+  --jiumu-color-black: #000000;
+  --jiumu-color-primary-rgb: 64, 158, 255;
+  --jiumu-color-success-rgb: 103, 194, 58;
+  --jiumu-color-warning-rgb: 230, 162, 60;
+  --jiumu-color-danger-rgb: 245, 108, 108;
+  --jiumu-color-error-rgb: 245, 108, 108;
+  --jiumu-color-info-rgb: 144, 147, 153;
+}
+
+/* 文档模块配套样式 */
+:root {
+  --jiumu-doc-primary-color: #5468ff;
+  --jiumu-doc-text-color: #1c1e21;
+  --jiumu-doc-spacing: 12px;
+  --jiumu-doc-icon-stroke-width: 1.4;
+  --jiumu-doc-highlight-color: var(--jiumu-doc-primary-color);
+  --jiumu-doc-muted-color: #969faf;
+  --jiumu-doc-container-background: rgba(101,108,133,.8);
+  --jiumu-doc-logo-color: #5468ff;
+  --jiumu-doc-modal-width: 560px;
+  --jiumu-doc-modal-height: 600px;
+  --jiumu-doc-modal-background: #f5f6f7;
+  --jiumu-doc-modal-shadow: inset 1px 1px 0 0 hsla(0,0%,100%,.5),0 3px 8px 0 #555a64;
+  --jiumu-doc-searchbox-height: 56px;
+  --jiumu-doc-searchbox-background: #ebedf0;
+  --jiumu-doc-searchbox-focus-background: #fff;
+  --jiumu-doc-searchbox-shadow: inset 0 0 0 2px var(--jiumu-doc-primary-color);
+  --jiumu-doc-hit-height: 56px;
+  --jiumu-doc-hit-color: #444950;
+  --jiumu-doc-hit-active-color: #fff;
+  --jiumu-doc-hit-background: #fff;
+  --jiumu-doc-hit-shadow: 0 1px 3px 0 #d4d9e1;
+  --jiumu-doc-key-gradient: linear-gradient(-225deg,#d5dbe4,#f8f8f8);
+  --jiumu-doc-key-shadow: inset 0 -2px 0 0 #cdcde6,inset 0 0 1px 1px #fff,0 1px 2px 1px rgba(30,35,90,.4);
+  --jiumu-doc-footer-height: 44px;
+  --jiumu-doc-footer-background: #fff;
+  --jiumu-doc-footer-shadow: 0 -1px 0 0 #e0e3e8,0 -3px 6px 0 rgba(69,98,155,.12);
+}
+
+/* 屏幕尺寸适配 */
+:root {
+  --jiumu-s-screen-max-width: 1376px;
+}
+
+/* 页面菜单栏样式 */
+:root {
+  --jiumu-menu-active-color: var(--jiumu-color-primary);
+  --jiumu-menu-text-color: var(--jiumu-text-color-primary);
+  --jiumu-menu-hover-text-color: var(--jiumu-color-primary);
+  --jiumu-menu-bg-color: var(--jiumu-fill-color-blank);
+  --jiumu-menu-hover-bg-color: var(--jiumu-color-primary-light-5);
+  --jiumu-menu-height: 56px;
+  --jiumu-menu-item-height: 55px;
+  --jiumu-menu-sub-item-height: calc(var(--jiumu-menu-item-height) - 6px);
+  --jiumu-menu-horizontal-height: 60px;
+  --jiumu-menu-horizontal-sub-item-height: 36px;
+  --jiumu-menu-item-font-size: var(--jiumu-font-size-base);
+  --jiumu-menu-item-hover-fill: var(--jiumu-color-primary-light-5);
+  --jiumu-menu-border-color: var(--jiumu-border-color);
+  --jiumu-menu-base-level-padding: 20px;
+  --jiumu-menu-level-padding: 22px;
+  --jiumu-menu-icon-width: 24px;
+}
+
+/* 加载旋转器样式 */
+:root {
+  --jiumu-loading-spinner-size: 42px;
+  --jiumu-loading-fullscreen-spinner-size: 50px;
+}
+
+:root {
+  --jiumu-popup-modal-bg-color: var(--jiumu-color-black);
+  --jiumu-popup-modal-opacity: .5;
+}
+
+/* 全局字体样式 */
+:root {
+  --jiumu-font-size-extra-large: 22px;
+  --jiumu-font-size-large: 18px;
+  --jiumu-font-size-medium: 16px;
+  --jiumu-font-size-base: 14px;
+  --jiumu-font-size-small: 13px;
+  --jiumu-font-size-extra-small: 12px;
+  --jiumu-font-family: "Fira Sans", "Segoe UI", Roboto, Ubuntu, Quote, Oxygen, sans-serif;
+  --jiumu-font-weight-primary: 500;
+  --jiumu-font-line-height-primary: 24px;
+  --jiumu-font-letter-spacing-small: 1px;
+  --jiumu-font-letter-spacing-base: 2px;
+  --jiumu-font-letter-spacing-medium: 3px;
+  --jiumu-font-letter-spacing-large: 4px;
+}
+
+/* 边框样式 */
+:root {
+  --jiumu-border-radius-base: 4px;
+  --jiumu-border-radius-small: 2px;
+  --jiumu-border-radius-medium: 10px;
+  --jiumu-border-radius-round: 20px;
+  --jiumu-border-radius-circle: 100%;
+}
+
+/* 动画样式 */
+:root {
+  --jiumu-transition-duration: .5s;
+  --jiumu-transition-duration-fast: .2s;
+  --jiumu-transition-duration-slow: .8s;
+  --jiumu-transition-function-ease-in-out-bezier: cubic-bezier(.645, .045, .355, 1);
+  --jiumu-transition-function-fast-bezier: cubic-bezier(.23, 1, .32, 1);
+  --jiumu-transition-all: all var(--jiumu-transition-duration) var(--jiumu-transition-function-ease-in-out-bezier);
+  --jiumu-transition-fade: opacity var(--jiumu-transition-duration) var(--jiumu-transition-function-fast-bezier);
+  --jiumu-transition-md-fade: transform var(--jiumu-transition-duration) var(--jiumu-transition-function-fast-bezier), opacity var(--jiumu-transition-duration) var(--jiumu-transition-function-fast-bezier);
+  --jiumu-transition-fade-linear: opacity var(--jiumu-transition-duration-fast) linear;
+  --jiumu-transition-border: border-color var(--jiumu-transition-duration-fast) var(--jiumu-transition-function-ease-in-out-bezier);
+  --jiumu-transition-box-shadow: box-shadow var(--jiumu-transition-duration-fast) var(--jiumu-transition-function-ease-in-out-bezier);
+  --jiumu-transition-color: color var(--jiumu-transition-duration-fast) var(--jiumu-transition-function-ease-in-out-bezier);
+}
+
+/* 组件尺寸 */
+:root {
+  --jiumu-component-size-large: 40px;
+  --jiumu-component-size: 32px;
+  --jiumu-component-size-small: 24px;
+}
+
+/* 组件间距 */
+:root {
+  --jiumu-component-initial-padding: 0;
+  --jiumu-component-basic-padding: 4px;
+  --jiumu-component-padding-primary: var(--jiumu-component-initial-padding) calc(8 * var(--jiumu-component-basic-padding));
+  --jiumu-component-padding-regular: var(--jiumu-component-initial-padding) calc(3 * var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding) calc(8 * var(--jiumu-component-basic-padding));
+  --jiumu-component-padding-secondary: var(--jiumu-component-initial-padding) calc(3 * var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding) calc(6 * var(--jiumu-component-basic-padding));
+  --jiumu-component-initial-margin: 0;
+  --jiumu-component-basic-margin: 2px;
+  --jiumu-component-regular-margin: 3px;
+  --jiumu-component-secondary-margin: 5px;
+}
+
+/* 标签权重配置 */
+:root {
+  --jiumu-z-index-normal: 1;
+  --jiumu-z-index-top: 100;
+  --jiumu-z-index-popper: 200;
+  --jiumu-z-index-nav: 10;
+  --jiumu-z-index-navBar: 20;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BlackadderITC';
+  src: url('../font/BlackadderITC_Regular.ttf');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Happy_School';
+  src: url('../font/Happy_School.ttf');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  src: url('../font/Oxygen.otf');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Quote';
+  src: url('../font/Quote.ttf');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/Roboto-Regular.ttf');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../font/Ubuntu-Title.ttf');
+  font-display: auto;
+}

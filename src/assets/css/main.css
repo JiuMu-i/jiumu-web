@@ -1,0 +1,60 @@
+@import './base.css';
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--jiumu-color-primary-light-1);
+}
+
+input {
+  background-color: var(--jiumu-fill-color);
+}
+
+input::placeholder {
+  color: var(--jiumu-text-color-placeholder);
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--jiumu-z-index-nav);
+}
+
+main {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--jiumu-bg-color);
+  color: var(--jiumu-text-color-primary);
+  transition: color var(--jiumu-transition-duration), background-color var(--jiumu-transition-duration);
+  line-height: 1.6;
+  font-family: var(--jiumu-font-family);
+  font-size: var(--jiumu-font-size-base);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--jiumu-scrollbar-thumb-bg-color);
+  border-radius: var(--jiumu-border-radius-medium);
+  transition: var(--jiumu-transition-all);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: var(--jiumu-border-radius-medium);
+}
