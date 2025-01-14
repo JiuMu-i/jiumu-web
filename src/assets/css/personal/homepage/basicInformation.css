@@ -1,5 +1,6 @@
 .basicInformationBar {
-  padding: 5px 0 5px 0;
+  padding: calc(2 * var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding) calc(2 * var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding);
+  margin-bottom: calc(5 * var(--jiumu-component-secondary-margin));
 }
 
 .container {
@@ -7,7 +8,7 @@
 }
 
 .personalAvatar {
-  border-radius: 9px;
+  border-radius: calc(var(--jiumu-border-radius-medium) - 1px);
 }
 
 .informationBar {
@@ -30,5 +31,5 @@
 }
 
 .experienceGroup {
-  padding: 5px 0 5px 0;
+  padding: var(--jiumu-component-regular-padding) var(--jiumu-component-initial-padding) var(--jiumu-component-regular-padding) var(--jiumu-component-initial-padding);
 }

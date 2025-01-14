@@ -280,6 +280,8 @@
 :root {
   --jiumu-component-initial-padding: 0;
   --jiumu-component-basic-padding: 4px;
+  --jiumu-component-regular-padding: 5px;
+  --jiumu-component-secondary-padding: 3px;
   --jiumu-component-padding-primary: var(--jiumu-component-initial-padding) calc(8 * var(--jiumu-component-basic-padding));
   --jiumu-component-padding-regular: var(--jiumu-component-initial-padding) calc(3 * var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding) calc(8 * var(--jiumu-component-basic-padding));
   --jiumu-component-padding-secondary: var(--jiumu-component-initial-padding) calc(3 * var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding) calc(6 * var(--jiumu-component-basic-padding));

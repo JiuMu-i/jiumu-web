@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--jiumu-menu-base-level-padding);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--jiumu-bg-color-overlay);
+  border-radius: calc(var(--jiumu-border-radius-medium) - 1px);
+  min-width: 300px;
+}
+
+.basicMaterialsBar {
+
+}
+
+.followCloselyGroup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: calc(3 * var(--jiumu-component-secondary-margin));
+}
+
+.followItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.followTo {
+  margin-right: 1.75rem;
+}
+
+.followFrom {
+  margin-left: 1.75rem;
+}
+
+.dividerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  width: 3px;
+  height: 2rem;
+  border-radius: var(--jiumu-border-radius-base);
+  background-color: var(--jiumu-fill-color-darker);
+}
+
+.operateGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 300px;
+  }
+}

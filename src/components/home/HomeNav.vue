@@ -133,7 +133,9 @@ const switchRailStyle = ({checked}) => {
           <!-- Avatar & Github -->
           <div class="homeNavBarSocial">
             <div class="navMenuItem homeNavBarMenuLink">
-              <n-icon :component="LogoGithub" :size="28" class="socialLink"/>
+              <a href="https://github.com/JiuMu-i/jiumu-web" target="_blank">
+                <n-icon :component="LogoGithub" :size="28" class="socialLink"/>
+              </a>
             </div>
             <div class="navMenuItem homeNavBarMenuGroup">
               <n-dropdown trigger="hover" :options="HomeNavData.avatarDropdown_ARR" @select="handleUserSelect">

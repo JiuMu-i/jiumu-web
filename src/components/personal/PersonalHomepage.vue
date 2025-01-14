@@ -1,6 +1,7 @@
 <script setup>
 import { onErrorCaptured } from 'vue'
-import BasicInformation from '@/components/personal/homepage/BasicInformation.vue'
+import BasicInformation from './homepage/BasicInformation.vue'
+import MaterialsList from './homepage/MaterialsList.vue'
 import LoadingBarUtils from '@/assets/js/loadingBarUtils'
 
 const LoadingBarClass = new LoadingBarUtils()
@@ -16,6 +17,7 @@ onErrorCaptured(() => {
   <main class="personalHomepage">
     <div class="pageContent">
       <BasicInformation />
+      <MaterialsList />
     </div>
   </main>
 </template>

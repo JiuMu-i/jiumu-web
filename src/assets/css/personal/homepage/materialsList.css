@@ -1,0 +1,11 @@
+.materialsList {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+@media (min-width: 768px) {
+  .materialsList {
+    flex-direction: row;
+  }
+}
