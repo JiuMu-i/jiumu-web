@@ -291,6 +291,15 @@
   --jiumu-component-secondary-margin: 5px;
 }
 
+/* 文字间距 */
+:root {
+  --jiumu-text-letter-spacing-initial: 0;
+  --jiumu-text-letter-spacing-basic: 2px;
+  --jiumu-text-letter-spacing-small: 1px;
+  --jiumu-text-letter-spacing-medium: 3px;
+  --jiumu-text-letter-spacing-large: 4px;
+}
+
 /* 标签权重配置 */
 :root {
   --jiumu-z-index-normal: 1;

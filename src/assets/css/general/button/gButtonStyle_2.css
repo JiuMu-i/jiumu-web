@@ -1,0 +1,40 @@
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.gButton {
+  border: 0;
+}
+
+.gButton::before {
+  content: "";
+  position: absolute;
+  background: conic-gradient(
+    from var(--angle),
+    var(--jiumu-color-primary),
+    var(--jiumu-color-success),
+    var(--jiumu-color-warning),
+    var(--jiumu-color-danger),
+    var(--jiumu-color-error),
+    var(--jiumu-color-info)
+  );
+  inset: 0;
+  animation: rotate 1.5s linear infinite;
+  opacity: 1;
+}
+
+.gButton::after {
+  content: "";
+  position: absolute;
+  border-radius: calc(var(--jiumu-border-radius-medium) - 2px);
+  background: var(--jiumu-fill-color);
+  inset: 1px;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}

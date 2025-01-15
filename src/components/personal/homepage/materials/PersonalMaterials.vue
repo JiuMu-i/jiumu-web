@@ -1,6 +1,9 @@
 <script setup>
 import GButtonStyle from '@/components/general/button/GButtonStyle.vue'
 
+const useSignInStyles = '$styles_1'
+const useEditStyles = '$styles_0'
+
 </script>
 
 <template>
@@ -25,9 +28,14 @@ import GButtonStyle from '@/components/general/button/GButtonStyle.vue'
         <!-- 操作组 -->
         <div class="operateGroup">
           <!-- 签到 -->
-          <div class="operateItem signIn">
-            <g-button-style>签到</g-button-style>
-          </div>
+          <g-button-style :styles="useSignInStyles" class="operateItem signIn">签到</g-button-style>
+          <!-- 编辑个人资料 -->
+          <g-button-style :styles="useEditStyles" class="operateItem editPersonalMaterials">编辑个人资料</g-button-style>
+        </div>
+        <!-- 个人简介 -->
+        <div class="personalIntroduction">
+          <p class="introductionTitle">个人简介</p>
+          <p class="briefIntroduction">Garbage code manufacturer</p>
         </div>
       </div>
     </div>

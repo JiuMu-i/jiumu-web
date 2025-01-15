@@ -52,6 +52,25 @@
   width: 100%;
 }
 
+.operateItem {
+  padding: calc(2 * var(--jiumu-component-basic-padding) - 1px) var(--jiumu-component-initial-padding) calc(2 * var(--jiumu-component-basic-padding) - 1px) var(--jiumu-component-initial-padding);
+  border-radius: calc(var(--jiumu-border-radius-medium) - 1px);
+  font-size: var(--jiumu-font-size-medium);
+  letter-spacing: var(--jiumu-text-letter-spacing-medium);
+}
+
+.signIn {
+  border: 0;
+  background: var(--jiumu-fill-color);
+  color: var(--jiumu-color-success);
+}
+
+.editPersonalMaterials {
+  margin-top: 1rem;
+  background: var(--jiumu-fill-color);
+  color: var(--jiumu-color-success);
+}
+
 @media (min-width: 768px) {
   .container {
     width: 300px;

@@ -1,0 +1,14 @@
+.gButton {
+  padding: var(--jiumu-component-basic-padding) var(--jiumu-component-initial-padding) var(--jiumu-component-basic-padding) var(--jiumu-component-initial-padding);
+  border-radius: var(--jiumu-border-radius-base);
+  background: transparent;
+  color: var(--jiumu-text-color-placeholder);
+  font-size: var(--jiumu-font-size-base);
+  border: 1px solid var(--jiumu-border-color);
+  transition: all var(--jiumu-transition-duration-fast) linear;
+}
+
+.gButton:hover {
+  border-color: var(--jiumu-color-primary);
+  color: var(--jiumu-text-color-primary);
+}
