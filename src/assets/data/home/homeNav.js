@@ -2,15 +2,18 @@
 const documentDropdown_ARR = [
   {
     label: '测试1',
-    key: 'Test1'
+    key: 'Test1',
+    type: 'Page'
   },
   {
     label: '测试2',
-    key: 'Test2'
+    key: 'Test2',
+    type: 'Page'
   },
   {
     label: '测试3',
-    key: 'Test3'
+    key: 'Test3',
+    type: 'Page'
   }
 ]
 
@@ -18,15 +21,18 @@ const documentDropdown_ARR = [
 const gameDropdown_ARR = [
   {
     label: '测试1',
-    key: 'Test1'
+    key: 'Test1',
+    type: 'Page'
   },
   {
     label: '测试2',
-    key: 'Test2'
+    key: 'Test2',
+    type: 'Page'
   },
   {
     label: '测试3',
-    key: 'Test3'
+    key: 'Test3',
+    type: 'Page'
   }
 ]
 
@@ -34,15 +40,18 @@ const gameDropdown_ARR = [
 const toolDropdown_ARR = [
   {
     label: '测试1',
-    key: 'Test1'
+    key: 'Test1',
+    type: 'Page'
   },
   {
     label: '测试2',
-    key: 'Test2'
+    key: 'Test2',
+    type: 'Page'
   },
   {
     label: '测试3',
-    key: 'Test3'
+    key: 'Test3',
+    type: 'Page'
   }
 ]
 
@@ -50,15 +59,18 @@ const toolDropdown_ARR = [
 const avatarDropdown_ARR = [
   {
     label: '个人主页',
-    key: '/personalHomepage'
+    key: '/personalHomepage',
+    type: 'Page'
   },
   {
-    label: '测试2',
-    key: 'Test2'
+    label: '登录',
+    key: '$loginModal',
+    type: 'Modal'
   },
   {
     label: '测试3',
-    key: 'Test3'
+    key: 'Test3',
+    type: 'Page'
   }
 ]
 

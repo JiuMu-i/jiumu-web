@@ -27,11 +27,12 @@
 
 .logo {
   position: relative;
+  color: var(--jiumu-color-primary);
   filter: drop-shadow(0px 0px 3px var(--jiumu-color-primary));
 }
 
 .logo+.logoText {
-  padding-left: 8px;
+  padding-left: calc(2 * var(--jiumu-component-basic-padding));
 }
 
 .logoText {

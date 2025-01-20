@@ -16,6 +16,7 @@ import DefaultUser from '@/assets/svg/default-user.svg?component'
 import { HomeNavData } from '@/assets/data/home/index'
 import DropDownUtils from '@/assets/js/dropDownUtils'
 
+const emit = defineEmits(['open-login-modal'])
 const appearanceStore = useAppearanceStore()
 const appearanceActive = ref(appearanceStore.appearance)
 const searchValue = ref(null)
@@ -36,9 +37,18 @@ const handleToolSelect = (key) => {
   console.log(key)
 }
 
+// 相册
+const handlePhotoAlbumActive = () => {
+  DropDownClass.selectedToJump('/photoAlbumHomepage')
+}
+
 // 用户下拉菜单选中事件
-const handleUserSelect = (key) => {
-  DropDownClass.selectedToJump(key)
+const handleUserSelect = (key, option) => {
+  if (option.type === 'Modal') {
+    emit('open-login-modal', true)
+  } else {
+    DropDownClass.selectedToJump(key)
+  }
 }
 
 // 更改主题回调函数
@@ -108,7 +118,7 @@ const switchRailStyle = ({checked}) => {
               </n-dropdown>
             </div>
             <!-- 相册 -->
-            <a href="/" class="navMenuItem homeNavBarMenuLink navMenuText">相册</a>
+            <a @click="handlePhotoAlbumActive" class="navMenuItem homeNavBarMenuLink navMenuText">相册</a>
             <!-- 聊天室 -->
             <a href="/" class="navMenuItem homeNavBarMenuLink navMenuText">
               聊天室

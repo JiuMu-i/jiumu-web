@@ -1,11 +1,19 @@
 <script setup>
+import { ref } from 'vue'
 import HomeNav from '@/components/home/HomeNav.vue'
+import LoginModal from '@/components/modal/LoginModal.vue'
 
+const isOpen = ref(false)
+
+const handleLoginModal = (val) => {
+  isOpen.value = val
+}
 </script>
 
 <template>
   <div class="home">
-    <HomeNav />
+    <LoginModal :show-status="isOpen" @open-login-modal="handleLoginModal"/>
+    <HomeNav @open-login-modal="handleLoginModal"/>
     <router-view></router-view>
   </div>
 </template>

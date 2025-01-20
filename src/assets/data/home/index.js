@@ -1,4 +1,4 @@
-import HomeNavData from './homeNav.js'
+import HomeNavData from './homeNav'
 
 export {
   HomeNavData

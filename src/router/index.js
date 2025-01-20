@@ -19,6 +19,11 @@ const routes = [
         path: '/personalHomepage',
         name: 'PersonalHomepage',
         component: () => import('@/components/personal/PersonalHomepage.vue')
+      },
+      {
+        path: '/photoAlbumHomepage',
+        name: 'PhotoAlbumHomepage',
+        component: () => import('@/components/photoAlbum/PhotoAlbumHomepage.vue')
       }
     ]
   }

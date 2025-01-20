@@ -1,0 +1,90 @@
+.modalPage {
+  display: flex;
+  flex-direction: column;
+  min-width: 384px;
+  max-width: 90%;
+  min-height: 192px;
+  max-height: unset;
+  padding: var(--jiumu-component-initial-padding);
+  position: relative;
+  border-radius: var(--jiumu-border-radius-round);
+  border: none;
+  box-shadow: var(--jiumu-box-shadow-light);
+  background-color: var(--jiumu-bg-color-overlay);
+}
+
+.content {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 384px;
+  padding: calc(6 * var(--jiumu-component-basic-padding)) calc(8 * var(--jiumu-component-basic-padding)) calc(8 * var(--jiumu-component-basic-padding));
+  z-index: var(--jiumu-z-index-normal);
+}
+
+.loginBar, .registerBar {
+  padding-top: calc(6 * var(--jiumu-component-regular-padding));
+}
+
+.modalTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: calc(8 * var(--jiumu-component-regular-margin));
+}
+
+.logo {
+  width: calc(2 * var(--jiumu-font-size-large));
+  height: calc(2 * var(--jiumu-font-size-large));
+  color: var(--jiumu-text-color-primary);
+}
+
+.logo+.logoText {
+  padding-left: calc(4 * var(--jiumu-component-basic-padding));
+}
+
+.logoText {
+  color: var(--jiumu-text-color-primary);
+  font-family: Happy_School;
+  font-size: calc(2 * var(--jiumu-font-size-large));
+  font-weight: var(--jiumu-font-weight-primary);
+  letter-spacing: var(--jiumu-font-letter-spacing-base);
+}
+
+.formItems {
+  margin-bottom: calc(8 * var(--jiumu-component-basic-margin));
+}
+
+.telephoneAreaCode {
+  width: 35%;
+}
+
+.loginButton, .registerButton {
+  width: 100%;
+  background-color: var(--jiumu-color-primary);
+  color: var(--jiumu-text-color-primary);
+  font-size: var(--jiumu-font-size-medium);
+  letter-spacing: var(--jiumu-font-letter-spacing-base);
+}
+
+.loginButton:hover, .registerButton:hover {
+  background-color: var(--jiumu-color-primary-dark);
+  color: var(--jiumu-text-color-regular);
+}
+
+.switchBar {
+  display: flex;
+}
+
+.registerJump {
+  flex-direction: row-reverse;
+}
+
+.registerLink, .loginLink {
+  color: var(--jiumu-text-color-primary);
+}
+
+.registerLink:hover, .loginLink:hover {
+  color: var(--jiumu-color-primary);
+}
