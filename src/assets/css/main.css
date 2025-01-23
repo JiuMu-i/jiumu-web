@@ -40,6 +40,7 @@ body {
   line-height: 1.6;
   font-family: var(--jiumu-font-family);
   font-size: var(--jiumu-font-size-base);
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

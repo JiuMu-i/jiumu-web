@@ -1,0 +1,12 @@
+.photoAlbumNavBar {
+  padding: calc(2* var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding) calc(2* var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding);
+  margin-bottom: calc(5* var(--jiumu-component-secondary-margin));
+}
+
+.container {
+  display: flex;
+}
+
+.createNewPhotoAlbum {
+  letter-spacing: var(--jiumu-text-letter-spacing-basic);
+}

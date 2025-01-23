@@ -12,6 +12,7 @@ import {
 import { AngleDoubleLeft, AngleDoubleRight } from '@vicons/fa'
 import LogoDeer from '@/assets/svg/logo-deer.svg?component'
 import { LoginModalData } from '@/assets/data/modal/index'
+import request from '@/utils/request/index'
 
 const props = defineProps({
   showStatus: Boolean
@@ -45,10 +46,25 @@ const handleCloseModal = () => {
   loginModalShow.value = false
 }
 
+// 输入框限制函数 -- 仅允许输入数字
+const handleTelNumInputRestrictions = (val) => !val || /^\d+$/.test(val)
+
+// 表单登录处理
+const handleFormLogin = () => {
+  const res = request.post('/user/userLogin', {
+    "area_code": "+86",
+    "telephone_number": "17611107902",
+    "password": "Zhaosii5279369"
+  })
+  console.log(res)
+}
+
+// 跳转注册页
 const handleJumpToRegister = () => {
   pageLocation.value = false
 }
 
+// 返回登录页
 const handleBackLogin = () => {
   pageLocation.value = true
 }
@@ -56,7 +72,7 @@ const handleBackLogin = () => {
 
 <template>
   <n-modal-provider>
-    <n-modal v-model:show="loginModalShow" transform-origin="center">
+    <n-modal v-model:show="loginModalShow" transform-origin="center" :auto-focus="false">
       <template #default>
         <div class="modalPage">
           <div class="content">
@@ -75,7 +91,11 @@ const handleBackLogin = () => {
                       v-model:value="telAreaCodeVal"
                       :options="LoginModalData.telephoneAreaCode_ARR"
                       class="telephoneAreaCode" />
-                    <n-input v-model:value="telephoneNumber" type="text" placeholder="输入手机号" />
+                    <n-input
+                      v-model:value="telephoneNumber"
+                      type="text"
+                      placeholder="输入手机号"
+                      :allow-input="handleTelNumInputRestrictions" />
                   </n-input-group>
                 </div>
                 <!-- Form Password -->
@@ -88,7 +108,7 @@ const handleBackLogin = () => {
                 </div>
                 <!-- Form Login Button -->
                 <div class="formItems">
-                  <n-button class="loginButton">登录</n-button>
+                  <n-button @click="handleFormLogin" class="loginButton">登录</n-button>
                 </div>
               </div>
               <!-- 跳转注册页 -->
@@ -118,7 +138,11 @@ const handleBackLogin = () => {
                       v-model:value="telAreaCodeVal"
                       :options="LoginModalData.telephoneAreaCode_ARR"
                       class="telephoneAreaCode" />
-                    <n-input v-model:value="telephoneNumber" type="text" placeholder="填写手机号" />
+                    <n-input
+                      v-model:value="telephoneNumber"
+                      type="text"
+                      placeholder="填写手机号"
+                      :allow-input="handleTelNumInputRestrictions" />
                   </n-input-group>
                 </div>
                 <!-- Form Password -->

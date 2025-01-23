@@ -2,7 +2,7 @@
 	border-bottom: 1px solid var(--jiumu-border-color);
 	padding: var(--jiumu-component-padding-secondary);
 	height: var(--jiumu-menu-height);
-	background-color: var(--jiumu-bg-color-overlay);
+  backdrop-filter: saturate(100%) blur(8px);
 	white-space: nowrap;
 	transition: border-color var(--jiumu-transition-duration), background-color var(--jiumu-transition-duration);
 }

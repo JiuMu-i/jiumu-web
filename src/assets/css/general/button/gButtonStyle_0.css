@@ -1,4 +1,4 @@
-.gButton {
+.g_button {
   padding: var(--jiumu-component-basic-padding) var(--jiumu-component-initial-padding) var(--jiumu-component-basic-padding) var(--jiumu-component-initial-padding);
   border-radius: var(--jiumu-border-radius-base);
   background: transparent;
@@ -8,7 +8,7 @@
   transition: all var(--jiumu-transition-duration-fast) linear;
 }
 
-.gButton:hover {
+.g_button:hover {
   border-color: var(--jiumu-color-primary);
   color: var(--jiumu-text-color-primary);
 }

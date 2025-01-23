@@ -8,7 +8,7 @@ const $classes = useCssModule(props.styles)
 </script>
 
 <template>
-  <button :class="$classes.gButton">
+  <button :class="$classes.g_button">
     <span>
       <slot></slot>
     </span>

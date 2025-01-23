@@ -1,0 +1,47 @@
+.photoAlbumContentBar {
+  padding: calc(2* var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding) calc(2* var(--jiumu-component-basic-padding)) var(--jiumu-component-initial-padding);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photoAlbumTitleBar {
+  display: flex;
+  margin-bottom: calc(5* var(--jiumu-component-secondary-margin));
+}
+
+.photoAlbumTitle {
+  color: var(--jiumu-color-primary);
+  font-size: calc(2 * var(--jiumu-font-size-large));
+  letter-spacing: var(--jiumu-text-letter-spacing-basic);
+}
+
+.photoAlbumListBar {
+  display: grid;
+  row-gap: 4%;
+}
+
+.coverImage {
+  border-radius: calc(var(--jiumu-border-radius-medium) - 1px);
+}
+
+.coverName {
+  font-size: var(--jiumu-font-size-large);
+  font-weight: var(--jiumu-font-weight-primary);
+}
+
+@media (min-width: 768px) {
+  .photoAlbumListBar {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .photoAlbumListBar {
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+  }
+}

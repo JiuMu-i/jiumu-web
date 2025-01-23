@@ -4,11 +4,11 @@
   initial-value: 0deg;
 }
 
-.gButton {
+.g_button {
   border: 0;
 }
 
-.gButton::before {
+.g_button::before {
   content: "";
   position: absolute;
   background: conic-gradient(from var(--angle), transparent 0%, var(--jiumu-border-color) 5%, transparent 10%);
@@ -16,7 +16,7 @@
   animation: rotate 4s linear infinite;
 }
 
-.gButton::after {
+.g_button::after {
   content: "";
   position: absolute;
   border-radius: calc(var(--jiumu-border-radius-medium) - 2px);

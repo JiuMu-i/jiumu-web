@@ -1,0 +1,21 @@
+.photoAlbumHomepage {
+  padding: var(--jiumu-component-padding-secondary);
+}
+
+.pageContent {
+  margin: 0 auto;
+  max-width: var(--jiumu-s-screen-max-width);
+  padding: 25px 0 25px 0;
+}
+
+@media (min-width: 768px) {
+  .photoAlbumHomepage {
+    padding: var(--jiumu-component-padding-regular);
+  }
+}
+
+@media (min-width: 1280px) {
+  .photoAlbumHomepage {
+    padding: var(--jiumu-component-padding-primary);
+  }
+}
