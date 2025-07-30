@@ -2,6 +2,9 @@
 import {
   NImage
 } from 'naive-ui'
+import ClickController from '@/assets/js/clickController'
+
+const ClickControllerClass = new ClickController()
 
 const photoAlbumList = [
   {
@@ -30,6 +33,11 @@ const photoAlbumList = [
     src: 'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'
   }
 ]
+
+// 相册封面图点击进入图库
+const handleEnterGallery = () => {
+  ClickControllerClass.toJump('/galleryPage')
+}
 </script>
 
 <template>
@@ -50,6 +58,7 @@ const photoAlbumList = [
             width="100%"
             height="100%"
             preview-disabled
+            @click="handleEnterGallery"
             class="coverImage"/>
           <div class="coverOptions">
             <span class="coverName">{{ item.name }}</span>

@@ -24,6 +24,11 @@ const routes = [
         path: '/photoAlbumHomepage',
         name: 'PhotoAlbumHomepage',
         component: () => import('@/components/photoAlbum/PhotoAlbumHomepage.vue')
+      },
+      {
+        path: '/galleryPage',
+        name: 'GalleryPage',
+        component: () => import('@/components/photoAlbum/GalleryPage.vue')
       }
     ]
   }
