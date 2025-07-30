@@ -25,6 +25,7 @@
 
 .coverImage {
   border-radius: calc(var(--jiumu-border-radius-medium) - 1px);
+  cursor: pointer;
 }
 
 .coverName {
